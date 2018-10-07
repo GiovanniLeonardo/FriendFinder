@@ -1,0 +1,27 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friends Compatibility App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniLeonardo/FriendFinder.git"
+  },
+  "author": "G.Leonardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovanniLeonardo/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/GiovanniLeonardo/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  
+  }
+
+}
