@@ -3,6 +3,7 @@
     
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FriendFinder</title>
                   
         <!-- Latest compiled and minified CSS & JS -->
@@ -18,25 +19,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
            
         <!-- Custom style for buttons -->
-           <!-- <style type="text/css">
-                input[type="radio"]:checked+span{
-                    color:red;
-                }
-                input[type="radio"]{
-                    display: none;
-                }
-                input[type="radio"]+span::before{
-                    content: '';
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    margin-bottom: -2px;
-                    margin-right: 5px;
-                    border:none;
-                    background: url() no-repeat center bottom;
-                    background-size: 10px 10px;
-                }
-           </style>        -->
+        <link rel="stylesheet" href="./assets/style.css">
+           
      </head>
 
      <body>
@@ -54,7 +38,7 @@
               <input type="text" id="photo" class="form-control" required>
           
               <hr>
-          
+              
               <h3><strong>Question 1</strong></h3>
               <h4>Humor in the workplace is very important.</h4>
               <select class="chosen-select" id="q1">
@@ -164,6 +148,7 @@
                 <option value="4">4</option>
                 <option value="5">5 (Strongly Agree)</option>
               </select>
+              
 
               <br>
               <br>
@@ -268,7 +253,7 @@
                     ]
                   };
 
-                  var siteURL = window.location.origin;
+                 var siteURL = window.location.origin;
           
                   // AJAX post the data to the friends API.
                   $.post(siteURL + "/api/friends", userData, function(data) {
@@ -286,6 +271,7 @@
                   alert("Please fill out all fields before submitting!");
                 }
                 return false;
+
               });
             </script>
           
